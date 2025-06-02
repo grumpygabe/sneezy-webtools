@@ -16,7 +16,9 @@ export default defineConfig({
         rollupOptions: {
           output: {
             manualChunks: {
-              'map-assets': ['./src/assets/optimized-map.svg']
+              'map-assets': ['./src/assets/optimized-map.svg'],
+              'zone-data': ['./src/assets/zones.json'],
+              'room-data': ['./src/assets/rooms.json']
             }
           }
         }
